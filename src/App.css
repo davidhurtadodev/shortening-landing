@@ -10,5 +10,14 @@ html {
 
 body {
   background-color: #fff;
-  font-size: ;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.navbar .menu-bars {
+  cursor: pointer;
 }
