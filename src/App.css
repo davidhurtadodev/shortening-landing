@@ -6,10 +6,19 @@
 
 html {
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: #fff;
+}
+input {
+  font-size: 18px;
+  color: hsl(257, 7%, 63%);
+}
+button {
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -19,5 +28,227 @@ body {
 }
 
 .navbar .menu-bars {
+  cursor: pointer;
+}
+
+.welcome .illustration {
+  width: 110%;
+  position: relative;
+  left: 20px;
+}
+
+.welcome .text-div {
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.welcome .text-div h1 {
+  line-height: 1.25;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  color: hsl(255, 11%, 22%);
+}
+
+.welcome .text-div p {
+  color: hsl(257, 7%, 63%);
+  margin-bottom: 30px;
+}
+
+.start-btn {
+  color: #fff;
+  background-color: hsl(180, 66%, 49%);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 40px;
+  border: solid 1px hsl(180, 66%, 49%);
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.shortener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background-color: hsl(257, 27%, 26%);
+  margin: 20px;
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  border-radius: 10px;
+  border: solid 1px hsl(257, 27%, 26%);
+  overflow: hidden;
+}
+
+.shortener-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px #fff;
+  margin-bottom: 20px;
+}
+
+.shortener-btn {
+  width: 100%;
+  background-color: hsl(180, 66%, 49%);
+  border: solid 1px hsl(180, 66%, 49%);
+  color: #fff;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.bg-shortener-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.statistics-container {
+  background-color: #f0f1f6;
+  text-align: center;
+  padding: 110px 20px 0;
+}
+
+.statistics-text-container {
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+.statistics-text-container h2 {
+  color: hsl(255, 11%, 22%);
+}
+
+.statistics-container p {
+  color: hsl(257, 7%, 63%);
+  font-size: 16px;
+}
+
+.short-link-container {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.short-link-container {
+  text-align: left;
+  /* padding: 20px; */
+  font-size: 17px;
+}
+
+.short-link-container .long-link {
+  border-bottom: solid 2px hsl(257, 7%, 63%);
+  padding: 10px 20px;
+}
+.short-link-container .short-link {
+  color: hsl(180, 66%, 49%);
+  padding: 10px 20px;
+}
+
+.short-link-container .copy-btn {
+  width: 100%;
+  background-color: hsl(180, 66%, 49%);
+  border: solid 1px hsl(180, 66%, 49%);
+  color: #fff;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.short-link-container .copy-container {
+  padding: 0 20px 20px;
+}
+
+.features-box {
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+
+.features-box .img-span {
+  background-color: hsl(257, 27%, 26%);
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  height: 80px;
+  width: 80px;
+
+  top: -40px;
+}
+.feature-icon {
+  margin-top: 17px;
+}
+.feature-text {
+  padding: 0 20px 30px;
+  margin-top: -10px;
+}
+
+.feature-text h3 {
+  margin-bottom: 10px;
+}
+
+.features-box .pipeline {
+  width: 7px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  background-color: hsl(180, 66%, 49%);
+  left: 50%;
+  margin-left: -3.5px;
+}
+.boost-container {
+  background-color: hsl(257, 27%, 26%);
+  text-align: center;
+  position: relative;
+  z-index: -3;
+  height: 300px;
+}
+.boost-container h3 {
+  color: #fff;
+  padding: 100px 0 20px;
+  font-size: 25px;
+}
+
+.boost-container .start-btn {
+  margin-bottom: 70px;
+}
+.footer {
+  text-align: center;
+  background-color: hsl(260, 8%, 14%);
+  padding: 40px;
+}
+.footer h3 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.footer-list {
+  margin-bottom: 50px;
+}
+
+.footer-list h4 {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-list ul {
+  list-style: none;
+}
+.footer-list li {
+  color: hsl(0, 0%, 75%);
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.footer .social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container .social-img-container {
+  margin: 0 20px;
   cursor: pointer;
 }
