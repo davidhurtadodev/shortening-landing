@@ -1,5 +1,6 @@
 import React from 'react';
 import bgShortenMobile from './images/bg-shorten-mobile.svg';
+import bgShortenDesktop from './images/bg-shorten-desktop.svg';
 
 const Shortener = () => {
   return (
@@ -18,7 +19,8 @@ const Shortener = () => {
       <button className="shortener-btn" type="button">
         Shorten it!
       </button>
-      <img src={bgShortenMobile} className="bg-shortener-mobile" />
+      <img src={bgShortenMobile} className="bg-shortener-mobile hide-dsk" />
+      <img src={bgShortenDesktop} className="bg-shortener-mobile hide-xs" />
     </div>
   );
 };

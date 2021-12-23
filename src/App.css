@@ -294,3 +294,98 @@ button:hover {
   margin: 0 20px;
   cursor: pointer;
 }
+
+.hide-xs {
+  display: none;
+}
+
+@media only screen and (min-width: 991px) {
+  .hide-xs {
+    display: block;
+  }
+  .hide-dsk {
+    display: none;
+  }
+  .navbar {
+    padding: 30px 7%;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: 15px;
+  }
+  .nav-list li {
+    margin: 0 30px;
+    font-weight: 700;
+    color: hsl(257, 7%, 63%);
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-list.hide-xs {
+    margin-bottom: 10px;
+  }
+
+  .right-nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .login-a {
+    font-size: 16px;
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+  }
+  .sign-nav {
+    color: #fff;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: solid 1px hsl(180, 66%, 49%);
+    border-radius: 35px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 7% 120px;
+  }
+
+  .welcome .text-div {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .welcome .text-div h1 {
+    font-size: 3rem;
+  }
+  .welcome .illustration {
+    width: 140%;
+    left: 0;
+  }
+  .shortener {
+    display: flex;
+    flex-direction: row;
+    margin: 0 11%;
+    padding: 15px 25px;
+  }
+  .shortener-input {
+    width: 95%;
+    margin-top: 26px;
+  }
+  .shortener-btn {
+    width: 200px;
+  }
+  .input-label-div {
+    text-align: left;
+    margin: 0;
+  }
+}
