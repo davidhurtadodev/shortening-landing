@@ -12,7 +12,7 @@ export default () => {
     <div>
       <Navbar />
       <Welcome />
-      <Shortener />
+
       <StatisticsContainer />
       <BoostContainer />
       <Footer />

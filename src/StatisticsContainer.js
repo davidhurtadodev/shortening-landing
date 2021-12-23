@@ -4,7 +4,7 @@ import FeaturesBox from './FeaturesBox';
 import brandIcon from './images/icon-brand-recognition.svg';
 import recordsIcon from './images/icon-detailed-records.svg';
 import customizableIcon from './images/icon-fully-customizable.svg';
-import BoostContainer from './BoostContainer';
+import Shortener from './Shortener';
 
 const StatisticsContainer = () => {
   const featureParameters = [
@@ -33,7 +33,10 @@ const StatisticsContainer = () => {
 
   return (
     <div className="statistics-container">
-      <ShortLinkContainer />
+      <Shortener />
+      <div className="shorts-links-containers">
+        <ShortLinkContainer />
+      </div>
       <div className="statistics-text-container">
         <h2>Advanced Statistics</h2>
         <p>
