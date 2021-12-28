@@ -1,5 +1,6 @@
 import React from 'react';
 import boostMobile from './images/bg-boost-mobile.svg';
+import boostDesktop from './images/bg-boost-desktop.svg';
 
 const BoostContainer = () => {
   return (
@@ -10,7 +11,8 @@ const BoostContainer = () => {
           Get started
         </button>
       </div>
-      <img src={boostMobile} className="bg-shortener-mobile" />
+      <img src={boostMobile} className="bg-shortener-mobile hide-dsk" />
+      <img src={boostDesktop} className="bg-shortener-mobile hide-xs" />
     </div>
   );
 };

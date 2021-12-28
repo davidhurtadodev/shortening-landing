@@ -40,15 +40,26 @@ button:hover {
 .navbar .menu-bars {
   cursor: pointer;
 }
+.nav-list li:hover {
+  color: #000;
+}
+.login-a {
+  cursor: pointer;
+}
 
 .welcome {
   margin-bottom: 200px;
 }
+.illustration-div {
+  position: relative;
+  /* left: 10%; */
+  right: -10%;
+  text-align: right;
+}
 
 .welcome .illustration {
-  width: 110%;
-  position: relative;
-  left: 20px;
+  width: 120%;
+  max-width: 733px;
 }
 
 .welcome .text-div {
@@ -284,6 +295,10 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.footer-list li:hover {
+  color: hsl(180, 66%, 49%);
+}
+
 .footer .social-container {
   display: flex;
   justify-content: center;
@@ -365,11 +380,19 @@ button:hover {
   }
 
   .welcome .text-div h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-right: 50px;
+  }
+  .welcome .text-div p {
+    font-size: 1.1rem;
   }
   .welcome .illustration {
     width: 140%;
     left: 0;
+  }
+  .illustration-div {
+    left: 0;
+    right: 0;
   }
   .shortener {
     display: flex;
@@ -387,5 +410,87 @@ button:hover {
   .input-label-div {
     text-align: left;
     margin: 0;
+  }
+
+  .short-link-container {
+    margin: 0 11%;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    justify-content: flex-end;
+  }
+  .short-link-container .copy-container {
+    padding: 0;
+  }
+  .short-link-container .copy-btn {
+    padding: 10px 30px;
+  }
+  .short-link-container .long-link {
+    border: 0;
+    padding: 0;
+    margin: 0 auto 0 0;
+  }
+  .statistics-text-container {
+    margin: 0 30% 90px;
+  }
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11%;
+  }
+  .features-box {
+    width: 32%;
+    position: relative;
+    height: 350px;
+    border-radius: 7px;
+  }
+  .features-box.mid {
+    margin-top: 50px;
+  }
+  .features-box.right {
+    margin-top: 100px;
+  }
+  .features-box .pipeline {
+    width: 60px;
+    height: 7px;
+    position: absolute;
+    top: 50%;
+    left: 101%;
+  }
+  .feature-text {
+    text-align: left;
+  }
+  .features-box .img-span {
+    right: 25%;
+  }
+  .statistics-text-container h2 {
+    font-size: 35px;
+  }
+  .boost-container {
+    max-height: 250px;
+  }
+  .boost-container h3 {
+    font-size: 35px;
+    padding: 60px 0 20px;
+  }
+  .footer {
+    display: flex;
+    padding: 50px 11%;
+    justify-content: space-between;
+  }
+  .footer-list {
+    text-align: left;
+  }
+  .footer .social-container {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .features-box {
+    height: 300px;
+  }
+  .footer h3 {
+    margin-right: 150px;
   }
 }
