@@ -46,13 +46,16 @@ button:hover {
 .login-a {
   cursor: pointer;
 }
+.logo-div {
+  cursor: pointer;
+}
 
 .welcome {
-  margin-bottom: 200px;
+  margin-bottom: 170px;
 }
 .illustration-div {
   position: relative;
-  /* left: 10%; */
+
   right: -10%;
   text-align: right;
 }
@@ -116,6 +119,7 @@ button:hover {
 }
 .label-container {
   text-align: left;
+  min-height: 27px;
 }
 
 .shortener-input {
@@ -175,7 +179,7 @@ button:hover {
   font-size: 16px;
 }
 .shorts-links-containers {
-  margin-bottom: 100px;
+  margin: -50px 0 100px;
 }
 
 .short-link-container {
@@ -184,6 +188,7 @@ button:hover {
   font-size: 17px;
   background-color: #fff;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .short-link-container .long-link {
@@ -204,6 +209,10 @@ button:hover {
   font-weight: 700;
   border-radius: 5px;
   font-size: 17px;
+}
+.short-link-container .copy-btn.copied {
+  background-color: hsl(257, 27%, 26%);
+  border-color: hsl(257, 27%, 26%);
 }
 .copy-btn:hover {
   background-color: #9be3e2;
@@ -273,6 +282,7 @@ button:hover {
   color: #fff;
   font-size: 32px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .footer-list {
@@ -411,9 +421,12 @@ button:hover {
     text-align: left;
     margin: 0;
   }
+  .shorts-links-containers {
+    margin-top: -50px;
+  }
 
   .short-link-container {
-    margin: 0 11%;
+    margin: 0 11% 30px;
     display: flex;
     align-items: center;
     padding: 10px 25px;
@@ -424,6 +437,10 @@ button:hover {
   }
   .short-link-container .copy-btn {
     padding: 10px 30px;
+    width: 104px;
+  }
+  .short-link-container .copy-btn.copied {
+    padding: 10px 0;
   }
   .short-link-container .long-link {
     border: 0;

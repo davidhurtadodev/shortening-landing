@@ -30,7 +30,9 @@ const Shortener = ({ url, setUrl, getShortUrl }) => {
           onChange={(e) => setUrl(e.target.value)}
         />
         <div className="label-container">
-          <label htmlFor="shortenerInput">Please add a link</label>
+          <label htmlFor="shortenerInput">
+            {url ? 'Please add a link' : ''}
+          </label>
         </div>
       </div>
       <button

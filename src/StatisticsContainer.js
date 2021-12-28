@@ -22,6 +22,10 @@ const StatisticsContainer = () => {
   //   });
   // }, [urlArray]);
 
+  useEffect(() => {
+    setUrl('');
+  }, [urlArray]);
+
   const renderedUrlArray = urlArray.map((object) => {
     console.log(object);
 
@@ -84,10 +88,11 @@ const StatisticsContainer = () => {
   return (
     <div className="statistics-container">
       <Shortener url={url} setUrl={setUrl} getShortUrl={getShortUrl} />
-      <div className="shorts-links-containers">
-        {/* <ShortLinkContainer /> */}
-        {renderedUrlArray !== [] ? renderedUrlArray : null}
-      </div>
+
+      {renderedUrlArray !== [] ? (
+        <div className="shorts-links-containers">{renderedUrlArray}</div>
+      ) : null}
+
       <div className="statistics-text-container">
         <h2>Advanced Statistics</h2>
         <p>
