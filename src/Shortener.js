@@ -1,23 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import bgShortenMobile from './images/bg-shorten-mobile.svg';
 import bgShortenDesktop from './images/bg-shorten-desktop.svg';
 
-const Shortener = ({ url, setUrl, getShortUrl }) => {
-  // const getShortUrl = async () => {
-  //   try {
-  //     const urlResponse = await fetch(
-  //       `https://api.shrtco.de/v2/shorten?url=${url}`,
-  //       { mode: 'cors' }
-  //     );
-
-  //     const urlData = await urlResponse.json();
-  //     const shortLink = urlData.result.short_link;
-  //     console.log(shortLink);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
+const Shortener = ({ url, setUrl, getShortUrl, error }) => {
   return (
     <div className="shortener">
       <div className="input-label-div">
@@ -31,7 +16,7 @@ const Shortener = ({ url, setUrl, getShortUrl }) => {
         />
         <div className="label-container">
           <label htmlFor="shortenerInput">
-            {url ? 'Please add a link' : ''}
+            {error ? 'Please add a link' : ''}
           </label>
         </div>
       </div>

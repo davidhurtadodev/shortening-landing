@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Welcome from './Welcome';
-import Shortener from './Shortener';
 import StatisticsContainer from './StatisticsContainer';
 import BoostContainer from './BoostContainer';
 import Footer from './Footer';
@@ -12,7 +11,6 @@ export default () => {
     <div>
       <Navbar />
       <Welcome />
-
       <StatisticsContainer />
       <BoostContainer />
       <Footer />

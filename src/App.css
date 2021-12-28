@@ -104,7 +104,7 @@ button:hover {
   align-items: center;
   padding: 25px;
   background-color: hsl(257, 27%, 26%);
-  /* margin: 20px; */
+
   position: relative;
   top: -80px;
   z-index: 1;
@@ -131,7 +131,7 @@ button:hover {
 
 .shortener-input:focus {
   outline-color: 0 !important;
-  /* border: solid 1px hsl(0, 87%, 67%); */
+
   box-shadow: 0;
 }
 
@@ -167,7 +167,6 @@ button:hover {
 }
 
 .statistics-text-container {
-  /* margin-top: 70px; */
   margin-bottom: 90px;
 }
 .statistics-text-container h2 {
@@ -184,7 +183,7 @@ button:hover {
 
 .short-link-container {
   text-align: left;
-  /* padding: 20px; */
+
   font-size: 17px;
   background-color: #fff;
   border-radius: 5px;

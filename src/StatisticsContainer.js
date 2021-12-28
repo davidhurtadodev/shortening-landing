@@ -9,23 +9,14 @@ import Shortener from './Shortener';
 const StatisticsContainer = () => {
   const [url, setUrl] = useState('');
   const [urlArray, setUrlArray] = useState([]);
+  const [error, setError] = useState(false);
 
-  // useEffect(() => {
-  //   const renderedUrlArray = urlArray.map(({ longLink, shortLink }) => {
-  //     return (
-  //       <ShortLinkContainer
-  //         key={longLink}
-  //         longLink={longLink}
-  //         shortLink={shortLink}
-  //       />
-  //     );
-  //   });
-  // }, [urlArray]);
-
+  //Empty the url input when the urlArray changes
   useEffect(() => {
     setUrl('');
   }, [urlArray]);
 
+  //Rendering Url Array
   const renderedUrlArray = urlArray.map((object) => {
     console.log(object);
 
@@ -48,16 +39,19 @@ const StatisticsContainer = () => {
 
       const urlData = await urlResponse.json();
       const shortLink = urlData.result.short_link;
-      console.log(shortLink);
+
       setUrlArray((urlArray) => [
         ...urlArray,
         { longLink: url, shortLink: shortLink },
       ]);
+      setError(false);
     } catch (error) {
       console.error(error);
+      setError(true);
     }
   };
 
+  //Info of the parameters cards
   const featureParameters = [
     {
       title: 'Brand Recognition',
@@ -87,7 +81,12 @@ const StatisticsContainer = () => {
 
   return (
     <div className="statistics-container">
-      <Shortener url={url} setUrl={setUrl} getShortUrl={getShortUrl} />
+      <Shortener
+        url={url}
+        setUrl={setUrl}
+        getShortUrl={getShortUrl}
+        error={error}
+      />
 
       {renderedUrlArray !== [] ? (
         <div className="shorts-links-containers">{renderedUrlArray}</div>
