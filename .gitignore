@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /url-shortening-api-master
+
+# Local Netlify folder
+.netlify
