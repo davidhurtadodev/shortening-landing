@@ -8,7 +8,9 @@ import Shortener from './Shortener';
 
 const StatisticsContainer = () => {
   const [url, setUrl] = useState('');
-  const [urlArray, setUrlArray] = useState([]);
+  const [urlArray, setUrlArray] = useState(
+    JSON.parse(sessionStorage.getItem('urlArrayInLocalStorage')) || []
+  );
   const [error, setError] = useState(false);
 
   //Empty the url input when the urlArray changes
@@ -16,10 +18,17 @@ const StatisticsContainer = () => {
     setUrl('');
   }, [urlArray]);
 
+  useEffect(() => {
+    if (urlArray) {
+      sessionStorage.setItem(
+        'urlArrayInLocalStorage',
+        JSON.stringify(urlArray)
+      );
+    }
+  }, [urlArray]);
   //Rendering Url Array
-  const renderedUrlArray = urlArray.map((object) => {
-    console.log(object);
 
+  const renderedUrlArray = urlArray.map((object) => {
     return (
       <ShortLinkContainer
         key={object.longLink}
