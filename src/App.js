@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 export default () => {
   return (
-    <div>
+    <div className="App">
       <Navbar />
       <Welcome />
       <StatisticsContainer />

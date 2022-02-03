@@ -2,13 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 html {
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
+  /* overflow-x: hidden; */
 }
-
+.App {
+  overflow-x: hidden;
+}
 body {
   background-color: #fff;
 }
@@ -52,6 +56,7 @@ button:hover {
 
 .welcome {
   margin-bottom: 170px;
+  /* overflow-x: hidden; */
 }
 .illustration-div {
   position: relative;
@@ -193,6 +198,7 @@ button:hover {
 .short-link-container .long-link {
   border-bottom: solid 2px hsl(257, 7%, 63%);
   padding: 10px 20px;
+  overflow-x: hidden;
 }
 .short-link-container .short-link {
   color: hsl(180, 66%, 49%);
@@ -223,6 +229,9 @@ button:hover {
 .features-box {
   background-color: #fff;
   margin-bottom: 100px;
+}
+.features-box.right {
+  margin-bottom: 0;
 }
 
 .features-box .img-span {
@@ -321,6 +330,9 @@ button:hover {
 
 .hide-xs {
   display: none;
+}
+.features-container {
+  padding-bottom: 50px;
 }
 
 @media only screen and (min-width: 991px) {
@@ -508,5 +520,11 @@ button:hover {
   }
   .footer h3 {
     margin-right: 150px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .illustration-div {
+    left: 15%;
   }
 }
