@@ -1,5 +1,9 @@
 # Frontend Mentor - Shortly URL shortening API Challenge solution
 
+![](./screenshot.png)
+
+Demo: https://pedantic-perlman-6ce2c6.netlify.app
+
 This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -25,15 +29,6 @@ Users should be able to:
 - Copy the shortened link to their clipboard in a single click.
 - Use sessionStorage for saving links info.
 - Receive an error message when the `form` is submitted if:
-
-### Screenshot
-
-![](./screenshot.png)
-![](./screen-mobile.png)
-
-### Links
-
-- Live Site URL: (https://focused-murdock-542622.netlify.app/)
 
 ## My process
 
